@@ -1,5 +1,5 @@
 // set inital value to zero
-let count = 0;
+let count = 2;
 // select value and buttons
 const value = document.querySelector("#value");
 const btns = document.querySelectorAll(".btn");
@@ -10,9 +10,9 @@ btns.forEach(function (btn) {
     if (styles.contains("decrease")) {
       count--;
     } else if (styles.contains("increase")) {
-      count++;
+      count *= 2;
     } else {
-      count = 0;
+      count = 2;
     }
 
     if (count > 0) {
